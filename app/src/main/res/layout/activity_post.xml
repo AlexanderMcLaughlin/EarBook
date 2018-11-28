@@ -4,59 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FeedActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".PostActivity"
+    tools:layout_editor_absoluteY="25dp">
 
     <ImageButton
-        android:id="@+id/searchFeedButton"
-        android:layout_width="0dp"
-        android:layout_height="68dp"
-        android:background="@android:color/black"
-        android:contentDescription="Search"
-        android:onClick="searchButtonOnClick"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/postFeedButton"
-        app:layout_constraintStart_toEndOf="@+id/feedFeedButton"
-        app:srcCompat="@android:drawable/ic_menu_search" />
-
-    <ImageButton
-        android:id="@+id/feedFeedButton"
+        android:id="@+id/postPostButton"
         android:layout_width="0dp"
         android:layout_height="68dp"
         android:background="@android:color/background_light"
-        android:contentDescription="Feed"
+        android:onClick="postButtonOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profilePostButton"
+        app:layout_constraintStart_toEndOf="@+id/searchPostButton"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/searchPostButton"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@android:color/background_dark"
+        android:onClick="searchButtonOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/postPostButton"
+        app:layout_constraintStart_toEndOf="@+id/feedPostButton"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/feedPostButton"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@android:color/background_dark"
         android:onClick="feedButtonOnClick"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/searchFeedButton"
+        app:layout_constraintEnd_toStartOf="@+id/searchPostButton"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_recent_history" />
 
     <ImageButton
-        android:id="@+id/profileFeedButton"
+        android:id="@+id/profilePostButton"
         android:layout_width="0dp"
         android:layout_height="68dp"
-        android:background="@android:color/black"
-        android:contentDescription="Profile"
+        android:background="@android:color/background_dark"
         android:onClick="profileButtonOnClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/postFeedButton"
+        app:layout_constraintStart_toEndOf="@+id/postPostButton"
         app:srcCompat="@android:drawable/ic_media_play" />
 
-    <ImageButton
-        android:id="@+id/postFeedButton"
-        android:layout_width="0dp"
-        android:layout_height="68dp"
-        android:background="@android:color/black"
-        android:contentDescription="Post"
-        android:onClick="postButtonOnClick"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/profileFeedButton"
-        app:layout_constraintStart_toEndOf="@+id/searchFeedButton"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -66,5 +62,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Content Will Show Here" />
-
 </android.support.constraint.ConstraintLayout>

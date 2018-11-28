@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <ImageButton
+        android:id="@+id/feedSearchButton"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@android:color/background_dark"
+        android:onClick="feedButtonOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/searchSearchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+    <ImageButton
+        android:id="@+id/searchSearchButton"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@android:color/background_light"
+        android:onClick="searchButtonOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/postSearchButton"
+        app:layout_constraintStart_toEndOf="@+id/feedSearchButton"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/postSearchButton"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@android:color/background_dark"
+        android:onClick="postButtonOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profileSearchButton"
+        app:layout_constraintStart_toEndOf="@+id/searchSearchButton"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/profileSearchButton"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@android:color/background_dark"
+        android:onClick="profileButtonOnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postSearchButton"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Content Will Show Here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Content Will Show Here" />
+</android.support.constraint.ConstraintLayout>
